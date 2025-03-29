@@ -1,0 +1,8 @@
+Se detectó un error en la implementación del método isLeapYear() de la clase LeapYear, ya que devolvía un valor incorrecto para años bisiestos no centenarios, como el 2016. El problema se encontraba en la última línea del método, donde se aplicaba una lógica invertida: return (year % 4 == 0) ? false : true;, lo cual generaba que años válidos fueran marcados como no bisiestos. Para corregirlo, se reemplazó esta línea por return (year % 4 == 0);, lo que permitió que las pruebas unitarias diseñadas para las distintas particiones equivalentes del problema pasaran correctamente, confirmando el comportamiento esperado del programa.
+
+
+
+
+
+
+
